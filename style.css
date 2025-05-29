@@ -51,3 +51,154 @@ header {
     color: var(--primary);
     margin-right: 1px;
 }
+
+.main-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 112px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 18px;
+    margin-top: 62px;
+}
+
+.hero-content  {
+    flex: 1;
+}
+
+.hero-content h2 {
+    color: var(--white);
+    font-size: 32px;
+}
+
+.hero-content span {
+    color: var(--primary);
+}
+
+.hero-content p {
+    color: var(--silver);
+    margin-bottom: 24px;
+}
+
+.contact-button {
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    color: var(--white);
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.contact-button:hover {
+    background-color: var(--primary);
+}
+
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blue-square {
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary);
+}
+
+.portofolio-note-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--silver);
+    padding: 8px;
+    width: 402px;
+}
+
+.portofolio-note {
+    color: var(--silver);
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.portofolio-note span {
+    color: var(--white);
+    font-weight: bold;
+}
+
+/* Quote Section */
+.quote {
+    text-align: center;
+    border: 1px solid var(--silver);
+    margin: 0 auto;
+    position: relative;
+}
+
+.quote blockquote {
+    color: var(--white);
+    font-size: 24px;
+    padding: 32px;
+    margin: 0;
+}
+.quote blockquote::before, .quote blockquote::after {
+    content: '"';
+    position: absolute;
+    color: var(--silver);
+    font-style: italic;
+    font-size: 56px;
+    font-weight: bold;
+    background-image: linear-gradient(var(--background), var(--background));
+    background-size: 100% 45%;
+    background-repeat: no-repeat;
+}
+
+.quote blockquote::before {
+    top: -20px;
+    left: 20px;
+}
+.quote blockquote::after {
+    top: 73px;
+    right: 20px;
+}
+
+.quote figcaption {
+    position: absolute;
+    color: var(--silver);
+    font-size: 24px;
+    padding: 16px;
+    border: 1px solid var(--silver);
+    right: -1px;
+    border-top: none;
+}
+
+/* SOCIAL LINKS */
+.social-links {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 17px;
+    top: 0px;
+    gap: 8px;
+}
+.social-links-line {
+    width: 1px;
+    height: 191px;
+    background-color: var(--silver);
+    display: block;
+}
+
+.social-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
